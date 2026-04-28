@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+
+    <div class="page">
+
+      <a href="index.html" class="back-btn">← Back to Portfolio</a>
+
+      <div class="calculator">
+        <div class="display">
+          <div class="expression" id="expression"></div>
+          <div class="result" id="result">0</div>
+        </div>
+
+        <div class="buttons">
+          <button class="btn-calc span2" onclick="clearAll()">AC</button>
+          <button class="btn-calc" onclick="deleteLast()">⌫</button>
+          <button class="btn-calc operator" onclick="appendToDisplay('/')">÷</button>
+
+          <button class="btn-calc" onclick="appendToDisplay('7')">7</button>
+          <button class="btn-calc" onclick="appendToDisplay('8')">8</button>
+          <button class="btn-calc" onclick="appendToDisplay('9')">9</button>
+          <button class="btn-calc operator" onclick="appendToDisplay('*')">×</button>
+
+          <button class="btn-calc" onclick="appendToDisplay('4')">4</button>
+          <button class="btn-calc" onclick="appendToDisplay('5')">5</button>
+          <button class="btn-calc" onclick="appendToDisplay('6')">6</button>
+          <button class="btn-calc operator" onclick="appendToDisplay('-')">−</button>
+
+          <button class="btn-calc" onclick="appendToDisplay('1')">1</button>
+          <button class="btn-calc" onclick="appendToDisplay('2')">2</button>
+          <button class="btn-calc" onclick="appendToDisplay('3')">3</button>
+          <button class="btn-calc operator" onclick="appendToDisplay('+')">+</button>
+
+          <button class="btn-calc" onclick="appendToDisplay('00')">00</button>
+          <button class="btn-calc" onclick="appendToDisplay('0')">0</button>
+          <button class="btn-calc" onclick="appendToDisplay('.')">.</button>
+          <button class="btn-calc equals" onclick="calculate()">=</button>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>

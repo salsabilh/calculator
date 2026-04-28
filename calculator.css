@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1a3a6b 0%, #1a6fd4 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.back-btn {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  opacity: 0.85;
+  transition: opacity 0.3s;
+}
+
+.back-btn:hover {
+  opacity: 1;
+}
+
+/* CALCULATOR */
+.calculator {
+  background: #0d1526;
+  border-radius: 20px;
+  padding: 25px;
+  width: 340px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+  border: 1px solid #1e2d4a;
+}
+
+/* DISPLAY */
+.display {
+  background: #0a0f1e;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: right;
+  border: 1px solid #1e2d4a;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.expression {
+  font-size: 0.95rem;
+  color: #4a6580;
+  margin-bottom: 8px;
+  min-height: 22px;
+  word-break: break-all;
+}
+
+.result {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  word-break: break-all;
+}
+
+/* BUTTONS GRID */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.btn-calc {
+  background: #1a2840;
+  color: #e0e6f0;
+  border: none;
+  border-radius: 10px;
+  padding: 18px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  font-family: inherit;
+  border: 1px solid #1e2d4a;
+}
+
+.btn-calc:hover {
+  background: #1e3a5c;
+  transform: translateY(-2px);
+}
+
+.btn-calc:active {
+  transform: scale(0.95);
+}
+
+.btn-calc.operator {
+  background: #1a3a6b;
+  color: #4da6ff;
+  font-size: 1.2rem;
+}
+
+.btn-calc.operator:hover {
+  background: #1e4a8a;
+}
+
+.btn-calc.equals {
+  background: #1a6fd4;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.btn-calc.equals:hover {
+  background: #1558aa;
+}
+
+.span2 {
+  grid-column: span 2;
+  background: #2a1a2e;
+  color: #ff6b6b;
+}
+
+.span2:hover {
+  background: #3a1a2e;
+}
